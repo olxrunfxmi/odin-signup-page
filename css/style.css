@@ -1,0 +1,20 @@
+:root {
+	--font-family: Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
+		sans-serif;
+	--form-bg: url("https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?q=80&w=1862&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+body {
+	font-family: var(--font-family);
+	letter-spacing: -0.45px;
+}
+
+img {
+	max-width: 100%;
+}
+
+section {
+	width: 500px;
+	height: 500px;
+	background: var(--form-bg);
+}
