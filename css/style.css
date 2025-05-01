@@ -115,6 +115,9 @@ body {
 	padding-block: 2rem;
 	flex: 2;
 
+	position: fixed;
+	width: clamp(240px, 25vw, 420px);
+	height: 100vh;
 	display: grid;
 	color: whitesmoke;
 }
@@ -126,7 +129,11 @@ body {
 }
 
 .form-bar {
-	padding: clamp(1rem, 3vw, 3rem);
+	padding-inline-start: calc(
+		clamp(240px, 25vw, 420px) + clamp(1rem, 3vw, 3rem)
+	);
+	padding-inline-end: clamp(1rem, 3vw, 3rem);
+	padding-block: clamp(1rem, 3vw, 3rem);
 	flex: 3;
 }
 
@@ -241,5 +248,9 @@ label,
 @media (max-width: 600px) {
 	.side-bar {
 		display: none;
+	}
+
+	.form-bar {
+		padding-inline-start: clamp(1rem, 3vw, 3rem);
 	}
 }
